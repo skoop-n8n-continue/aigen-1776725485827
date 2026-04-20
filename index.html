@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Product Showcase Template</title>
+
+  <!-- GSAP Core + Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scene">
+    <!-- Background Video Layer -->
+    <video id="background-video" src="assets/template_blank_tiers.mp4" muted loop autoplay playsinline></video>
+
+    <div id="background-effects"></div>
+
+    <!-- Header Layer -->
+    <div id="header-layer">
+      <div class="logo-container">
+        <img src="assets/logos/PNG/QR_Logo_TransparentBackground.png" alt="QR Logo">
+      </div>
+      <h1 class="header-title">The Quietly Ridiculous</h1>
+      <h2 class="header-subtitle">Product Tiers</h2>
+    </div>
+
+    <!-- Products Container -->
+    <div id="products-container">
+      <!-- Products will be dynamically injected here by animation.js -->
+    </div>
+
+    <div id="foreground-layer"></div>
+    <div id="progress-bar"></div>
+  </div>
+
+  <script src="animation.js"></script>
+</body>
+</html>
